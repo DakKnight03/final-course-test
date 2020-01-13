@@ -22,5 +22,8 @@ def simple_arr(array, x):
     return "sum: %d | biggest: %d | smallest: %d | number of time x shows up: %d" % (sumary, biggest, smallest, counter)
 
 array = input("enter numbers: ").split(",")
-x = input("enter value x: ")
-print(simple_arr(array, x))
+int_arr = []
+for i in array:
+    int_arr.append(int(i))
+x = int(input("enter value x: "))
+print(simple_arr(int_arr, x))
